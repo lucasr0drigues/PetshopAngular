@@ -5,6 +5,7 @@ import { DataService } from 'src/app/services/data.services';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
+  styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
   public form!: FormGroup;
@@ -14,8 +15,8 @@ export class LoginPageComponent implements OnInit {
       username: [
         '',
         Validators.compose([
-          Validators.minLength(11),
-          Validators.maxLength(11),
+          Validators.minLength(14),
+          Validators.maxLength(14),
           Validators.required,
         ]),
       ],

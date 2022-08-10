@@ -17,7 +17,8 @@
             placeholder="CPF"
             [ngClass]="{
               'uk-form-danger':
-                !form.get('username')?.valid && !form.get('username')?.pristine
+                !form.controls['username'].valid &&
+                !form.controls['username'].pristine
             }"
           />
         </div>
@@ -27,6 +28,11 @@
             formControlName="password"
             type="password"
             placeholder="Senha"
+            [ngClass]="{
+              'uk-form-danger':
+                !form.controls['password'].valid &&
+                !form.controls['password'].pristine
+            }"
           />
         </div>
         <div class="uk-margin uk-text-right">
