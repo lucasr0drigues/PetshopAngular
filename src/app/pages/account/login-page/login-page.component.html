@@ -50,12 +50,12 @@
 
     <p class="uk-text-center" *ngIf="!busy">
       <a
-        href="/signup"
+        [routerLink]="['/signup']"
         class="uk-button uk-width-1-1 uk-button-large uk-button-primary uk-margin-small-bottom"
         >Quero me cadastrar</a
       >
       <br />
-      <a href="/reset-password" class="uk-button uk-button-link"
+      <a [routerLink]="['/reset-password']" class="uk-button uk-button-link"
         >Esqueci minha senha</a
       >
     </p>
