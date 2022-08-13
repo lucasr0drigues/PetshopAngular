@@ -1,4 +1,4 @@
-<div class="uk-card uk-card-default" uk-grid>
+<div class="uk-card uk-card-default">
   <div class="uk-card-media-top uk-text-center">
     <img
       src="{{ product.images[0] }}"
@@ -13,9 +13,13 @@
     <p style="height: 50px">
       {{ product.title }}
     </p>
-    <button class="uk-button uk-button-default">
-      <span class="uk-icon uk-margin-small-right" uk-icon="icon:cart"></span
-      >Adicionar
+    <br />
+    <button
+      class="uk-button uk-button-default uk-button-large uk-width-1-1 uk-margin-small-top"
+      (click)="addToCart()"
+    >
+      <span class="uk-icon uk-margin-small-right" uk-icon="icon: cart"></span>
+      Adicionar
     </button>
   </div>
 </div>
